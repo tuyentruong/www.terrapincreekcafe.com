@@ -1,0 +1,407 @@
+a {
+    color: #1c4c4e;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #1c4c4e;
+    color: #d9dfcc;
+}
+
+body {
+    background-color: #d9dfcc;
+    font-size: 13px;
+    font-family: "Lucida Grande", Verdana, sans-serif;
+    color: #59592d;
+    height: 100%;
+}
+
+input {
+    background-color: #fff;
+    padding: 2px;
+    border-left: 1px solid #aeb78c;
+    border-top: 1px solid #aeb78c;
+    border-right: 1px solid #aeb78c;
+    border-bottom: 1px solid #aeb78c;
+}
+
+input[type=submit] {
+    color: #d9dfcc;
+    background-color: #9ea680;
+    font-weight: bold;
+    border-left: 2px solid #aeb78c !important;
+    border-top: 2px solid #aeb78c !important;
+    border-right: 2px solid #929976 !important;
+    border-bottom: 2px solid #929976 !important;
+}
+
+input[type=submit]:focus, input[type=submit]:hover {
+    background-color: #59592d;
+    color: #d9dfcc;
+}
+
+.main input[type=submit] {
+    color: #59592d;
+    background-color: #d9dfcc;
+}
+
+.main input[type=submit]:focus, .main input[type=submit]:hover {
+    background-color: #59592d;
+    color: #d9dfcc;
+}
+
+.required {
+    font-weight: bold;
+    color: #cb2929;
+    vertical-align: middle;
+}
+
+.return {
+    text-decoration: underline;
+}
+
+.field-error input, .field-error select, .form-field.error option, .field-error textarea {
+    border-left: 2px solid #f00 !important;
+    border-top: 2px solid #f00 !important;
+    border-right: 2px solid #f00 !important;
+    border-bottom: 2px solid #f00 !important;
+}
+
+select {
+    background-color: #fff;
+    padding: 1px;
+    border: 1px solid #aeb78c
+}
+
+img {
+    border: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.left-text {
+    text-align: left;
+}
+
+.right-text {
+    text-align: right;
+}
+
+div.center, table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.underline {
+    border-bottom: 2px solid #404910;
+}
+
+.banner {
+    font-size: 13px;
+    font-weight: bold;
+    width: 875px;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner .subtitle {
+    font: 14px "Tempus Sans ITC", "Trebuchet MS", "Lucida Grande", Verdana, sans-serif;
+    text-align: center;
+}
+
+.links {
+    width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.links a {
+    color: #484824;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-bottom: 3px solid transparent;
+}
+
+.links {
+    background: #aeb78c;
+}
+
+.links a:hover {
+    color: #59592d;
+    background-color: transparent;
+    border-bottom: 3px solid #59592d !important;
+}
+
+.links a.selected {
+    color: #33331a;
+    border-bottom: 3px solid #33331a !important;
+    font-weight: bold;
+}
+
+.main {
+    background-color: #c4cbac;
+    height: 400px;
+    width: 875px;
+    color: #404910;
+    padding: 0;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+}
+
+.main a, .footer, .footer a {
+    color: #484824;
+}
+
+.main a, .admin a {
+    text-decoration: underline;
+}
+
+.main a:hover, .footer a:hover {
+    background-color: #6f774b;
+    color: #c4cbac;
+}
+
+.main .content {
+    padding: 8px;
+    line-height: 140%;
+}
+
+.main .large-map {
+    background-color: #d9dfcc;
+    width: 525px;
+    vertical-align: middle;
+    text-align: center
+}
+
+.main .separator, .main .photo {
+    background-color: #d9dfcc;
+}
+
+.footer {
+    clear: both;
+    width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.map {
+    font-size: 10px !important;
+}
+
+/* messages */
+.errorlist {
+    color: #900;
+}
+
+.errorlist ul {
+    padding-left: 20px !important;
+}
+
+.errorlist li {
+    padding-left: 3px;
+}
+
+.error-msg, .user-msg {
+    padding: 5px;
+    margin: 5px auto;
+    text-align: left;
+    position: relative;
+    width: 800px;
+
+}
+
+.error-msg {
+    border: 1px solid #a30 !important;
+    background: #ffcece;
+    color: #a30;
+    font-weight: bold;
+}
+
+.user-msg {
+    border: 1px solid #006b00 !important;
+    background: #c6ef9c;
+    color: #006b00;
+}
+
+/* menu */
+.menu-links {
+    background-color: #d9dfcc !important;
+}
+
+.menu-container, .blank-container {
+    width: 635px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px !important;
+    margin-bottom: 20px !important;
+    position: relative;
+}
+
+.dropshadow {
+    background: transparent url(/img/dropshadow.png) repeat-y bottom right;
+    margin: 0 0 0 17px;
+}
+
+.dropshadow-2 {
+    background-color: transparent;
+    position: relative;
+    bottom: 19px;
+    right: 18px;
+}
+
+.menu {
+    padding: 8px;
+    background: #d1cca6 url(/img/parchment.jpg) repeat-y;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    font: 13px "Tempus Sans ITC", "Trebuchet MS", "Lucida Grande", Verdana, sans-serif;
+    text-align: center;
+}
+
+.menu-border {
+    border: 3px double #b3af96;
+    padding: 10px;
+}
+
+.menu .heading {
+    color: #484531;
+    font: 19px "Tempus Sans ITC", "Trebuchet MS", "Lucida Grande", Verdana, sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+
+.menu .item {
+    font-size: 14px;
+    color: #484531;
+    margin-bottom: 15px;
+}
+
+.menu .item .name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.menu .item .wine-pairing {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.minimal {
+    color: #404910;
+    padding: 0;
+    width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+}
+
+/* contact */
+.background-contact {
+    background: #c4cbac url(img/contact_left.jpg)
+}
+
+/* reservation */
+.background-reservation {
+    background: #c4cbac url(img/reservation_left.jpg)
+}
+
+/* about us */
+.background-about-us {
+    background: #c4cbac url(img/about_us_left.jpg)
+}
+
+/* admin */
+.admin {
+    text-align: center;
+    font-size: 16px;
+}
+
+.notice {
+    color: #900;
+    font-weight: bold;
+    width: 600px;
+}
+
+.notice a {
+    color: #900;
+    text-decoration: underline;
+}
+
+.notice a:hover {
+    color: #d9dfcc;
+    background-color: #900;
+}
+
+/* reservations */
+table.list {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: collapse;
+    border: 1px solid #59592d !important;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+table.list th {
+    padding: 2px;
+    background-color: #c4cbac;
+}
+
+table.list td {
+    padding: 2px;
+}
+
+.quote {
+    font-size: 13px;
+    line-height: 120%;
+}
+
+.quote .quote-mark {
+    display: inline-block;
+    font-family: Garamond, Time New Roman, serif;
+    font-size: 20px;
+    color: #868A67;
+    top: -5px;
+}
+
+.quote .text {
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.source {
+    padding-top: 4px;
+    font-style: italic;
+    padding-right: 22px;
+    text-align: right;
+}
