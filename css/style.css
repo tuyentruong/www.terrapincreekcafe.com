@@ -137,8 +137,8 @@ div.center, table.center {
 .links a {
     color: #484824;
     display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
     border-bottom: 3px solid transparent;
 }
 
