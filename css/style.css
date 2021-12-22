@@ -48,6 +48,7 @@ input[type=submit]:focus, input[type=submit]:hover {
 .main input[type=submit]:focus, .main input[type=submit]:hover {
     background-color: #59592d;
     color: #d9dfcc;
+    vertical-align: middle;
 }
 
 .required {
