@@ -165,10 +165,10 @@ div.center, table.center {
     color: #404910;
     padding: 0;
     vertical-align: middle;
-    margin-top: 5px;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 2px;
+    margin-bottom: auto;
 }
 
 .main a, .footer, .footer a {
