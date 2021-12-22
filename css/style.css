@@ -159,13 +159,13 @@ div.center, table.center {
 }
 
 .main {
-    background-color: #c4cbac;
+      background-color: #c4cbac;
     height: 400px;
     width: 875px;
     color: #404910;
     padding: 0;
     vertical-align: middle;
-    margin-top: 2px;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2px;
