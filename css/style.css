@@ -18,7 +18,7 @@ body {
 
 #openTableReservationRow {
     box-sizing: border-box;
-    height: 166px;
+    text-align: center;
 }
 
 .required {
@@ -166,7 +166,7 @@ div.center, table.center {
     text-align: center
 }
 
-.main .separator, .main .photo {
+.main .separator {
     background-color: #d9dfcc;
 }
 

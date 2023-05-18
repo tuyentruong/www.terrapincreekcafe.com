@@ -26,15 +26,14 @@
 	</table>
 	<table class="main" cellspacing="0" cellpadding="0">
 		<tr id="openTableReservationRow">
-			<td style="background-color:#c4cbac" colspan="2" align="center">
-				<script type='text/javascript' src='//www.opentable.com/widget/reservation/loader?rid=192610&type=standard&theme=wide&color=1&dark=false&iframe=false&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website'></script>
+			<td colspan="2">
+				<script type="text/javascript" src="//www.opentable.com/widget/reservation/loader?rid=192610&type=standard&theme=wide&color=1&dark=false&iframe=false&domain=com&lang=en-US&newtab=false&ot_source=Restaurant%20website"></script>
 			</td>
 		</tr>
 		<tr>
 			<td class="content" valign="top">
 	            Terrapin Creek is a casual neighborhood spot where friends and neighbors can gather to enjoy great local and international cuisine.
 	            We are expanding the notion of comfort food to include dining that is delicious, affordable, and responsible.<br>
-
 	            <br>
 	            <br>
 	            <div class="center-text"><span class="bold underline">Reservation</span></div>
@@ -49,15 +48,25 @@
 	        <td width="525" class="photo"><img src="img/home_0.jpg" alt="food photo" id="foodImage" width="525" height="400" style=""></td>
 	    </tr>
 	</table>
-	<br>
 	<div class="notice center center-text" style="color:#CE4123"><h1></h1></div>
-	<br>
 	<table class="footer" cellspacing="0"><tbody><tr><td>1580 Eastshore Rd., Bodega Bay, CA 94923 <a href="http://maps.google.com/?q=1580+Eastshore+Rd,+Bodega+Bay,+CA+94923&amp;sll=37.762555,-122.46513&amp;sspn=0.006295,0.006295&amp;ie=UTF8&amp;z=17&amp;iwloc=addr" target="_new" class="map">[map]</a></td><td align="right">Tel: 707.875.2700</td></tr></tbody></table>
 	<script type="text/javascript">
 	    function switchImage(imageIndex, total) {
+			// we have disabled the global prototype.js $ and replaced it below to fix the conflict with the OpenTable widget
+			$ = function(id) {
+				if (typeof id == 'string') {
+					return Element.extend(document.getElementById(id));
+				}
+				else {
+					return Element.extend(id);
+				}
+			};
 	        var image = document.getElementById('foodImage');
 	        var nextImageIndex = (imageIndex + 1) % total;
-	        new Effect.Fade('foodImage', {queue:'end', afterFinish:function(){image.src = images[nextImageIndex];new Effect.Appear('foodImage', {queue:'end'});setTimeout('switchImage(' + nextImageIndex + ', ' + total + ')', 6000);}});
+			image.getInlineOpacity = function() {
+				return this.style.opacity || '';
+			};
+	        new Effect.Fade(image, {queue:'end', afterFinish:function(){image.src = images[nextImageIndex];new Effect.Appear(image, {queue:'end'});setTimeout('switchImage(' + nextImageIndex + ', ' + total + ')', 6000);}});
 	    }
 	    var images = ['img/home_1.jpg', 'img/home_2.jpg', 'img/home_3.jpg', 'img/home_4.jpg', 'img/home_5.jpg', 'img/home_6.jpg'];
 	    var total = images.length;
