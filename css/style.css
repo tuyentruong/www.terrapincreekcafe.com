@@ -16,38 +16,9 @@ body {
     height: 100%;
 }
 
-input {
-    background-color: #fff;
-    padding: 2px;
-    border-left: 1px solid #aeb78c;
-    border-top: 1px solid #aeb78c;
-    border-right: 1px solid #aeb78c;
-    border-bottom: 1px solid #aeb78c;
-}
-
-input[type=submit] {
-    color: #d9dfcc;
-    background-color: #9ea680;
-    font-weight: bold;
-    border-left: 2px solid #aeb78c !important;
-    border-top: 2px solid #aeb78c !important;
-    border-right: 2px solid #929976 !important;
-    border-bottom: 2px solid #929976 !important;
-}
-
-input[type=submit]:focus, input[type=submit]:hover {
-    background-color: #59592d;
-    color: #d9dfcc;
-}
-
-.main input[type=submit] {
-    color: #59592d;
-    background-color: #d9dfcc;
-}
-
-.main input[type=submit]:focus, .main input[type=submit]:hover {
-    background-color: #59592d;
-    color: #d9dfcc;
+#openTableReservationRow {
+    box-sizing: border-box;
+    height: 166px;
 }
 
 .required {
@@ -159,7 +130,7 @@ div.center, table.center {
 }
 
 .main {
-      background-color: #c4cbac;
+    background-color: #c4cbac;
     height: 400px;
     width: 875px;
     color: #404910;
